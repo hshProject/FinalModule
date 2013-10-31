@@ -14,6 +14,8 @@ namespace Controls
         static void Main()
         {
             Application.EnableVisualStyles();
+            Application.EnableVisualStyles();
+            Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
           
         }
