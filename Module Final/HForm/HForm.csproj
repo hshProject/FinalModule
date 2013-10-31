@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3332EB82-5D3D-4594-AC50-F0F97589E0C4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HForms</RootNamespace>
+    <AssemblyName>HForms</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Module\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'hsh|x86'">
+    <OutputPath>bin\x86\hsh\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Module|x86'">
+    <OutputPath>bin\x86\Module\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="AxInterop.CrystalActiveXReportViewerLib13">
+      <HintPath>..\..\..\Lawer_Program1oct\Lawer_Program\Lawer_Program\bin\Debug\AxInterop.CrystalActiveXReportViewerLib13.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="HControls">
+      <HintPath>E:\Module Final\Module\bin\Debug\HControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.CrystalActiveXReportViewerLib13">
+      <HintPath>..\..\..\Lawer_Program1oct\Lawer_Program\Lawer_Program\bin\Debug\Interop.CrystalActiveXReportViewerLib13.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Microsoft Visual Studio 10.0\ReportViewer\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Microsoft Visual Studio 10.0\ReportViewer\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\CaptureDevice.cs" />
+    <Compile Include="Data\ClasConfig.cs" />
+    <Compile Include="Data\clasKeyDown.cs" />
+    <Compile Include="Data\clasMain.cs" />
+    <Compile Include="Data\clasReference.cs" />
+    <Compile Include="Data\clasReport.cs" />
+    <Compile Include="Data\Class1.cs" />
+    <Compile Include="Data\ClasSpecialTasks.cs" />
+    <Compile Include="Data\DataBinder.cs" />
+    <Compile Include="Data\DataLayer.cs" />
+    <Compile Include="Data\Encrypt.cs" />
+    <Compile Include="Data\FileManager.cs" />
+    <Compile Include="Data\FormsTasks.cs" />
+    <Compile Include="Data\GlobalVariables.cs" />
+    <Compile Include="MForm\Caputre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MForm\Caputre.designer.cs">
+      <DependentUpon>Caputre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MForm\Configuration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MForm\Configuration.designer.cs">
+      <DependentUpon>Configuration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MForm\DataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MForm\DataForm.designer.cs">
+      <DependentUpon>DataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MForm\frmBranches.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MForm\frmBranches.designer.cs">
+      <DependentUpon>frmBranches.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MForm\frmSmallSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MForm\frmSmallSearch.designer.cs">
+      <DependentUpon>frmSmallSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MForm\GroupPermissions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MForm\GroupPermissions.designer.cs">
+      <DependentUpon>GroupPermissions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MForm\Groups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MForm\Groups.designer.cs">
+      <DependentUpon>Groups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MForm\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MForm\Login.designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MForm\MP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MForm\MP.designer.cs">
+      <DependentUpon>MP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MForm\Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MForm\Register.designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MForm\rptForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MForm\rptForm.designer.cs">
+      <DependentUpon>rptForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MForm\UserPermissions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MForm\UserPermissions.designer.cs">
+      <DependentUpon>UserPermissions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MForm\Users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MForm\Users.designer.cs">
+      <DependentUpon>Users.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MForm\ViewReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MForm\ViewReports.designer.cs">
+      <DependentUpon>ViewReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MForm\XForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MForm\XForm.designer.cs">
+      <DependentUpon>XForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MForm\Caputre.resx">
+      <DependentUpon>Caputre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MForm\Configuration.resx">
+      <DependentUpon>Configuration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MForm\DataForm.resx">
+      <DependentUpon>DataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MForm\frmBranches.resx">
+      <DependentUpon>frmBranches.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MForm\frmSmallSearch.resx">
+      <DependentUpon>frmSmallSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MForm\GroupPermissions.resx">
+      <DependentUpon>GroupPermissions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MForm\Groups.resx">
+      <DependentUpon>Groups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MForm\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MForm\MP.resx">
+      <DependentUpon>MP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MForm\Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MForm\rptForm.resx">
+      <DependentUpon>rptForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MForm\UserPermissions.resx">
+      <DependentUpon>UserPermissions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MForm\Users.resx">
+      <DependentUpon>Users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MForm\ViewReports.resx">
+      <DependentUpon>ViewReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MForm\XForm.resx">
+      <DependentUpon>XForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Program.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bg.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
